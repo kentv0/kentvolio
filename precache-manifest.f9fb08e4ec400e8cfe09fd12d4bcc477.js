@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ec16497805758ef565f406298921879",
+    "revision": "3db21eedaf2a53ff170c819988057e56",
     "url": "/index.html"
   },
   {
-    "revision": "7fcad655d9d9aa567fb6",
-    "url": "/static/css/main.3f60e4da.chunk.css"
+    "revision": "eb61f325c927f58b76b9",
+    "url": "/static/css/main.8f39622b.chunk.css"
   },
   {
-    "revision": "3220aa3f2ed5130fe591",
-    "url": "/static/js/2.2b155ea5.chunk.js"
+    "revision": "aaed3e236c385e292c8e",
+    "url": "/static/js/2.aa80b27a.chunk.js"
   },
   {
-    "revision": "7fcad655d9d9aa567fb6",
-    "url": "/static/js/main.0f5858c2.chunk.js"
+    "revision": "eb61f325c927f58b76b9",
+    "url": "/static/js/main.aec93f43.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -21,19 +21,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "8b99de31b604677635a4010d6b7620bf",
-    "url": "/static/media/academia-intro-img-01.8b99de31.jpg"
-  },
-  {
-    "revision": "d8bc971803cf23d6fef83dd7c97ba40f",
-    "url": "/static/media/academia-intro-img-02.d8bc9718.jpg"
+    "url": "/static/media/academia-intro-background.8b99de31.jpg"
   },
   {
     "revision": "5e9ccb5e935751527d9c595bb5f3a782",
     "url": "/static/media/academia-profile.5e9ccb5e.png"
   },
   {
-    "revision": "0ead7ffc513840c1a1a7f97308114b92",
-    "url": "/static/media/contact-profile.0ead7ffc.png"
+    "revision": "d8bc971803cf23d6fef83dd7c97ba40f",
+    "url": "/static/media/contact-intro-background.d8bc9718.jpg"
+  },
+  {
+    "revision": "36e6eae55a08d55f95fb89440200242c",
+    "url": "/static/media/contact-profile.36e6eae5.png"
   },
   {
     "revision": "89e4d4385458d21a699802f2daa2397f",
@@ -49,19 +49,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "ac8da1e4349011ba7d542f7a286473bd",
-    "url": "/static/media/home-intro-img-01.ac8da1e4.jpg"
+    "url": "/static/media/home-intro-background.ac8da1e4.jpg"
   },
   {
-    "revision": "0dc46341072a603ca73f5472e66d7e82",
-    "url": "/static/media/home-profile.0dc46341.png"
+    "revision": "f0fd7912115c2807562aa523c8a9d19d",
+    "url": "/static/media/home-profile.f0fd7912.png"
   },
   {
     "revision": "a14f3e1354c6b80fed4110ffdc79c0c2",
     "url": "/static/media/industry-profile.a14f3e13.png"
   },
   {
-    "revision": "a7961c5d271e9f551c2ad8ac7e95f525",
-    "url": "/static/media/intern-01-img-01.a7961c5d.png"
+    "revision": "42e9758548cd6df377de8127b6a62d46",
+    "url": "/static/media/intern-01-img-01.42e97585.png"
   },
   {
     "revision": "b5d980010e78951c28e08e9cefe861f5",
