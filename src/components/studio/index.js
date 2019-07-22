@@ -11,7 +11,7 @@ class Studio extends Component {
     render() {
         return (
           <HashRouter basename="/studio">
-            <div class="main-container">
+            <div class="app-container">
               <Title strings={ data_forTitle } />
               <Carousel thumbnails={ data_forCarousel } />
               <Route path="/" exact component={ Studio_01 } />

@@ -20,7 +20,7 @@ class Academia extends Component {
     render() {
         return (
           <HashRouter basename="/academia">
-            <div class="main-container">
+            <div class="app-container">
               <Title strings={ data_forTitle } />
               <Carousel thumbnails={ data_forCarousel } />
               <Route path="/" exact component={ Introduction } />
@@ -44,7 +44,7 @@ const data_forTitle = [ 'A','C','A','D','E','M','I','A' ]
 const data_forIntro = [
     {
         id: 1,
-        photo: "academia-intro-img-01",
+        background: "academia-intro-background",
         profile: 'academia-profile',
         heading1: 'STATUS:',
         content1: `TYPE:              UNDERGRADUATE${'\n'}DURATION:       4 YEARS${'\n'}PROGRESS:      COMPLETED`,
@@ -117,7 +117,7 @@ const data_forCarousel = [
         heading1: `Date: `,
         content1: `2018-JAN-23`,
         heading2: `Title: `,
-        content2: 'Advanced Prog. Languages',
+        content2: 'Advanced Prog. Lang.',
         heading3: `Location: `,
         content3: `San Diego, CA`,
         course: 'CS-520',
@@ -164,7 +164,7 @@ const data_forCarousel = [
 const dataFor_Course_01 = [
     {
         id: 4,
-        heading2: 'Programming Assignment #4',
+        heading2: 'Program #4',
         content2: 'Recursive Subroutines',
         heading3: 'Summary:',
         content3: `This assignment is designed to help you learn about subroutines and recursion. For this assignment, you will write a recursive subroutine to reverse a string and print the results.${'\n\n'}First your main program will print a title line containing your name, programming assignment number, and your class account number, all on one line. Then it will prompt the user to enter a string and then call a recursive subroutine that will create a reversed copy of the string entered by the user. When the subroutine returns, the main program will print a message "The reversed string is: " followed by the reversed string on the following line.`,
@@ -175,7 +175,7 @@ const dataFor_Course_01 = [
     },
     {
         id: 3,
-        heading2: 'Programming Assignment #3',
+        heading2: 'Program #3',
         content2: 'Making Change',
         heading3: 'Summary:',
         content3: `This assignment is designed to help you learn about flow control in assembler. For this program, you will accept a currency input, and you will output the appropriate list of bills and coins equal to the input amount.${'\n\n'}Additionally, you must make your program as efficient as possible. The grader will count the number of instructions in your program (not counting macros). The fewer instructions you have, the better. Very efficient programs may receive up to 10% extra credit, and very inefficient programs may be penalized by up to 10%.`,
@@ -186,7 +186,7 @@ const dataFor_Course_01 = [
     },
     {
         id: 2,
-        heading2: 'Programming Assignment #2',
+        heading2: 'Program #2',
         content2: 'What Day Is It?',
         heading3: 'Summary:',
         content3: `This assignment is designed to help you get more familiar with basic assembly language instructions, the IO macros, and the bsvc system. For this assignment, you will write a program in Motorola M68000 assembler that takes as input a date in the form MM/DD/YYYY, and prints the day of the week for that date.`,
@@ -197,7 +197,7 @@ const dataFor_Course_01 = [
     },
     {
         id: 1,
-        heading2: 'Programming Assignment #1',
+        heading2: 'Program #1',
         content2: 'Learning the Basics',
         heading3: 'Summary:',
         content3: `This first assignment is designed to help you become familiar with the assembly language programming environment, and learn the basics of memory organization and assembly language. For this assignment, you will read a date of the form MM/DD/YYYY from the keyboard, and then print the English month, the date, a comma, then the year, followed by a period.  That is, if the user types 10/15/2019 then your program will print October 15, 2019.`,
@@ -213,7 +213,7 @@ const dataFor_Course_01 = [
 const dataFor_Course_02 = [
     {
         id: 4,
-        heading2: 'Programming Assignment #4',
+        heading2: 'Program #4',
         content2: 'A Phone Book',
         heading3: 'Summary:',
         content3: `For this assignment, you will create a Phone Book utility. The Phone Book stores Phone Numbers and the Name associated with each number in a Dictionary. The Phone Book is designed to provide facilities to add, remove and look up Phone Numbers, along with certain other utility functions. Your project will use the DictionaryADT interface (provided) to support your application program. The dictionary takes key=value pairs. Each key must be distinct; no duplicates are allowed. There may be duplicate values. The phone number is the key and the name is the value.`,
@@ -224,7 +224,7 @@ const dataFor_Course_02 = [
     },
     {
         id: 3,
-        heading2: 'Programming Assignment #3',
+        heading2: 'Program #3',
         content2: 'A Maze Puzzle Game',
         heading3: 'Summary:',
         content3: `For this assignment, you will write a Java program that finds the shortest route (if one exists) through a randomly generated maze. This problem can easily be solved using a stack and queue with the algorithm that is given below. You will use your stack and queue from project #2 to solve the problem. The maze is a two dimensional square grid. You will write a class named MazeSolver that interacts with a GUI (graphical user interface) written by your instructor which will show the maze and your solution.${'\n\n'}`,
@@ -235,8 +235,8 @@ const dataFor_Course_02 = [
     },
     {
         id: 2,
-        heading2: 'Programming Assignment #2',
-        content2: 'Doubly Linked List with a Stack and a Queue',
+        heading2: 'Program #2',
+        content2: 'Doubly Linked List with Stack and Queue',
         heading3: 'Summary:',
         content3: `For this assignment, you will implement the interface from program #1 (LinearListADT) but with a doubly linked list rather than an array. Your implementation must be named LinearList.  Additionally, you will write a Stack and a Queue, which you will build with your LinearList class via composition.`,
         heading4: `${'\n'}Details:`,
@@ -246,7 +246,7 @@ const dataFor_Course_02 = [
     },
     {
         id: 1,
-        heading2: 'Programming Assignment #1',
+        heading2: 'Program #1',
         content2: 'Circular Array',
         heading3: 'Summary:',
         content3: `For this assignment, you will create an implementation of the ArrayListADT interface (below). A "list" is a sequence of values, which may include duplicates. The ordering of the items in the list is not specified but does matter, and is in fact problem dependent. No insertion ever occurs at an arbitrary location. When an item is removed from the list, the ordering of the remaining elements in the list is unchanged. There may not be any empty or unused cells between the front and rear of the list.${'\n\n'}Your implementation of the ArrayListADT offers a meaningful improvement over basic arrays for list-based operations. Inserting or removing an element at index [0] is a timeconsuming operation for arrays. If you wish to insert an element at index [0] and the array is not empty, then you must shift all of the existing elements out of the way before the insertion can occur. Similarly, if you remove the element at index [0] from a non-empty array, you must shift elements down to "fill in the hole". Your implementation must be able to insert or remove elements from either end of the array in constant time, with no shifting of elements necessary. A circular array strategy offer this capability. "Circular" is an abstraction; the underlying array does not form a circle but rather will be a standard linear array.${'\n\n'}A solution to this problem can be found if you abandon the notion that the first element in the list must be at index [0].  Instead, you maintain a class level variable that hold the index of the "front" and "rear" of the list. The front and rear indices move independently, allowing insertion and deletion to happen without shifting anything.${'\n\n'}`,
@@ -262,7 +262,7 @@ const dataFor_Course_02 = [
 const dataFor_Course_03 = [
     {
         id: 6,
-        heading2: 'Programming Assignment #6',
+        heading2: 'Program #6',
         content2: 'Scheme',
         heading3: 'Set Up:',
         content3: `While your programs need to ultimately need to run on edoras, you may find it convenient to download DrRacket as a programming environment.${'\n\n'}https://racket-lang.org/ and select Download. Instructions to get started are on the Racket site. Racket is the re-named Scheme. Apart from the name, it works${'\n\n'}The example at the bottom already defines some lists with which you can experiment; all you need to do is add the definitions of four functions:${'\n\u2022'} odds${'\n\u2022'} evenrev${'\n\u2022'} penultimate${'\n\u2022'} palindrome${'\n\n'}Each of these functions should take exactly one parameter: the parameter must be a list. If your function was given the wrong number of parameters, we will let the interpreter complain about it. However, if the function is given the wrong type of parameter (i.e., not a list), the function should return a friendly error message (including a newline). Beginning with “USAGE: “ followed by an indication of the correct invocation. For example, USAGE: (palindrome {list}`,
@@ -273,7 +273,7 @@ const dataFor_Course_03 = [
     },
     {
         id: 5,
-        heading2: 'Programming Assignment #5',
+        heading2: 'Program #5',
         content2: 'Operator Overloading',
         heading3: 'Summary:',
         content3: 'The array construct in C is very efficient but also very dangerous for the unwary. For example, many novice programmers fall into the trap of declaring an array of 100 elements and then try to access the element with index 100. Not only is this an error in C, but the language won`t even alert the user when the mistake is made. C++ allows programmers to define safer and more flexible array constructs if they are willing to sacrifice some of C`s runtime efficiency. The purpose of this lab is to see how this is done and to gain some experience in overloading operators.',
@@ -284,7 +284,7 @@ const dataFor_Course_03 = [
     },
     {
         id: 4,
-        heading2: 'Programming Assignment #4',
+        heading2: 'Program #4',
         content2: 'The Traveling Salesman Problem',
         heading3: 'Summary:',
         content3: 'For this assignment, you will write a program in FORTRAN 95 to solve the Minimum Tour problem (aka the Traveling Salesman Problem). The problem may be described as follows: A salesman must leave his home city and visit N cities after which he then returns home. The order in which he visits the cities is unimportant, however he must visit each of the N cities, and he must start and end in his home city. Your task is to find the minimum tour, the shortest possible route from home base through N cities and back home again.',
@@ -295,7 +295,7 @@ const dataFor_Course_03 = [
     },
     {
         id: 3,
-        heading2: 'Programming Assignment #3',
+        heading2: 'Program #3',
         content2: 'Matrix Multiplication',
         heading3: 'Summary:',
         content3: `For this assignment, you will multiply two matrices and print the result. If A is an m x n matrix, and B is an n x p matrix, then the product matrix C, which is A x B, is defined to be the m x p matrix whose entry in the i${'\u1D57\u02B0'}th row and the j${'\u1D57\u02B0'}column is the sum of the products of corresponding entries of the i${'\u1D57\u02B0'}row of A and the j${'\u1D57\u02B0'}column of B.`,
@@ -306,7 +306,7 @@ const dataFor_Course_03 = [
     },
     {
         id: 2,
-        heading2: 'Programming Assignment #2',
+        heading2: 'Program #2',
         content2: 'Finding Prime Numbers',
         heading3: 'Summary:',
         content3: 'You will write a C language program that prints out all of the prime numbers in the range [2..n]. Your program will accept a single command line argument, the integer value n which represents the end of the range. Your program must be named p2.c and as usual, must be copied into your handin subdirectory to be graded.',
@@ -317,7 +317,7 @@ const dataFor_Course_03 = [
     },
     {
         id: 1,
-        heading2: 'Programming Assignment #1',
+        heading2: 'Program #1',
         content2: 'An Optimization Problem',
         heading3: 'Summary:',
         content3: 'For this assignment, you will write a C language program to determine the optimum dimensions of a closed cylindrical can, such as those used for canning food products. "Optimum" means the cheapest can possible.',
@@ -412,8 +412,8 @@ const dataFor_Course_05 = [
 const dataFor_Course_06 = [
     {
         id: 4,
-        heading2: 'Programming Assignment #4',
-        content2: `SR (Synchronizing Resources) Programming`,
+        heading2: 'Program #4',
+        content2: `SR Programming`,
         heading3: `Problem:`,
         content3: `Using the MDP (https://www2.cs.arizona.edu/mpd/download/) program and the SR programming language write an implementation that will demonstrate semaphore and multiple processing.`,
         heading5: `Solution:`,
@@ -421,7 +421,7 @@ const dataFor_Course_06 = [
     },
     {
         id: 3,
-        heading2: 'Programming Assignment #3',
+        heading2: 'Program #3',
         content2: `Prolog: Members and Functors`,
         heading3: `Summary:`,
         content3: `Using NU-prolog (or any Prolog system capable of basic Prolog functionality) provide the implementation for the following questions.`,
@@ -432,7 +432,7 @@ const dataFor_Course_06 = [
     },
     {
         id: 2,
-        heading2: 'Programming Assignment #2',
+        heading2: 'Program #2',
         content2: `Prolog: Predicates and Concatenation`,
         heading3: `Summary:`,
         content3: `Using NU-prolog (or any Prolog system capable of basic Prolog functionality) provide the implementation for the following questions.`,
@@ -443,7 +443,7 @@ const dataFor_Course_06 = [
     },
     {
         id: 1,
-        heading2: 'Programming Assignment #1',
+        heading2: 'Program #1',
         content2: `Abstract Class in C++ and Java`,
         heading3: `Problem:`,
         content3: `Using an Abstract BatAndBallGames class to create baseball and cricket subclasses in both C++ and Java programming languages.`,
@@ -457,7 +457,7 @@ const dataFor_Course_06 = [
 const dataFor_Course_07 = [
     {
         id: 5,
-        heading2: 'Programming Assignment #5',
+        heading2: 'Program #5',
         content2: `Extra Credit`,
         heading3: `Mandatory Portion:`,
         content3: `For this assignment, you will revise your prog4 assignment, and add functionality to write an ${'\''}executable${'\''} file. This file must have the same name as the input source code file, but with the extension .obj Thus, if the source file is myprogram1.asm, your program will output two new files: myprogram1.lis and myprogram1.obj. The .obj file consists of the following records only:${'\n'}    ${'\u2022'} Header${'\n'}    ${'\u2022'} Text${'\n'}    ${'\u2022'} Modification${'\n'}    ${'\u2022'} End${'\n\n'}The ${'\''}executable${'\''} must be written in ascii characters, not in binary format.All projects submitted must satisfy this requirement to receive any points. Projects that implement this functionality perfectly will receive 35 points.`,
@@ -468,7 +468,7 @@ const dataFor_Course_07 = [
     },
     {
         id: 4,
-        heading2: 'Programming Assignment #4',
+        heading2: 'Program #4',
         content2: `Implementing the Second Pass`,
         heading3: `Summary:`,
         content3: `For this assignment, your team will revise your sicxe_asm class and implement the second pass.`,
@@ -477,7 +477,7 @@ const dataFor_Course_07 = [
     },
     {
         id: 3,
-        heading2: 'Programming Assignment #3',
+        heading2: 'Program #3',
         content2: `SIC/XE Assembler`,
         heading3: `Summary:`,
         content3: `For this assignment, you will write the first version of the sicxe_asm class, which is an assembler for the SIC/XE architecture.`,
@@ -488,7 +488,7 @@ const dataFor_Course_07 = [
     },
     {
         id: 2,
-        heading2: 'Programming Assignment #2',
+        heading2: 'Program #2',
         content2: `Opcode Table`,
         heading3: `Summary:`,
         content3: `You will be working in teams as with the last assignment. For this assignment, you will write an opcodetab class, which will provide methods to lookup the machine opcode (two byte string representing the hex value of the opcode) and other needed information, such as the instruction format. The project must be written in C++ and compile (using the standard g++ compiler installed on rohan) without errors and run on rohan to receive any credit.`,
@@ -499,7 +499,7 @@ const dataFor_Course_07 = [
     },
     {
         id: 1,
-        heading2: 'Programming Assignment #1',
+        heading2: 'Program #1',
         content2: `File Parsing`,
         heading3: `Summary:`,
         content3: `You will be working in teams of four. For this assignment, you will write a file_parser class, which will read an assembly language source code file and separate all content into separate, identifiable tokens. The project must be written in C++ and compile (using the standard g++ compiler installed on rohan) without errors and run on rohan to receive any credit. You must include a Makefile that will correctly compile your project.`,
@@ -515,7 +515,7 @@ const dataFor_Course_07 = [
 const dataFor_Course_08 = [
     {
         id: 3,
-        heading2: 'Programming Assignment #3',
+        heading2: 'Program #3',
         content2: `Alarm Clock`,
         heading3: `Details:`,
         content3: `Design and implement an Alarm Clock${'\n\n'}Tom implement this alarm clock, you will need to display a running “wall clock“ (display hours : minutes : seconds), an “alarm clock” (displays a message at specified time of day), and a “timer” which displays a countdown timer (minutes : seconds) until 00 : 00 is reached. Note, this will require using multiple processes/threads, interrupts, and other IPC mechanisms.${'\n\n'}To run your program, the following is the command line format:${'\n'}  $> aclock h m s ct${'\n\n'}where h = hours, m = minutes, and s=second for the alarm and c = seconds for countdown timer (and is optional).${'\n\n'}You may use a single terminal window, each line printed to the terminal must identify if it’s time-of-day, timer, or alarm. Multiple terminals/displays could be used for extra credit. No process/thread may busy-wait. The time_${'\n\n'}Your program shall do the following:${'\n'}    ${'\u2022'} Upon startup, read the input to determine the alarm time and the timer run time.${'\n'}      If the user does not supply a value for the countdown timer, a default value of 10${'\n'}      seconds will be used. The program shall run until the user presses the x key${'\n'}      and then exits.${'\n'}    ${'\u2022'} The program shall create three child processes/threads, then busy-wait until the${'\n'}      user presses the x key. Note, if the x key is detected and the child processes/threads${'\n'}      are still running, the parent needs to wait until all child processes/threads are${'\n'}      complete and then exit.${'\n'}    ${'\u2022'} The fist child process/thread shall implement a clock which prints the hour, minute,${'\n'}      and second once every second (in human readable localtime).${'\n'}    ${'\u2022'} The second child process/thread shall implement an alarm clock that will display a${'\n'}      message at the specified time (message(s) to be determined by the student).${'\n'}    ${'\u2022'} The third child process/thread shall implement a countdown timer that prints the${'\n'}      minutes and seconds remaining, once every second, until 00:00 is reached.${'\n'}    ${'\u2022'} The parent process, upon receiving an “x” from the console (keyboard input from${'\n'}      the user), shall notify (signal, or pipe, or ..., etc, your choice of IPC mechanism) the${'\n'}      process’/threads telling them to terminate and then once they have completed (all${'\n'}      have exited), print a friendly message and then terminate itself.${'\n\n'}Your project shall include a README file, you will include it in your turn-in.${'\n\n'}Your program will be tested by compiling and executing on rohan. Your program shall be written such that it compiles and executes cleanly when using cc/gcc/CC/g++. Note - you must use a Makefile. You shall create a sub-directory named "a3" in your home directory. In it, you shall place all of your project files, including your Makefile. Your source files shall contain sufficient comments for making the source easy to read. Points will be taken off for poorly (or non) commented source. Name the executable "aclock". Also, create an archive file (tarball, zip) and upload to Blackboard (one student per project).${'\n\n'}    ${'\u2022'} Create ~/a3 by hand.${'\n'}    ${'\u2022'} Create all necessary project files. Put them into${'\n'}      ~/a3.${'\n'}    ${'\u2022'} The Makefile shall create an executable named "aclock" in this same directory (~/a3).${'\n'}    ${'\u2022'} The system call "system()" will NOT be allowed.${'\n'}    ${'\u2022'} You may work individually but are highly encouraged to work in teams of two (no${'\n'}      larger) on this assignment.${'\n'}    ${'\u2022'} You may use cc, CC, gcc, or g++ compiler on this assignment.`,
@@ -524,7 +524,7 @@ const dataFor_Course_08 = [
     },
     {
         id: 2,
-        heading2: 'Programming Assignment #2',
+        heading2: 'Program #2',
         content2: `Page Replacement Algorithms`,
         heading3: `Details:`,
         content3: `Design and develop a simulation of the page replacement function of the page fault interrupt handler routine for a paged memory management system. Additionally, you shall design, implement, and analyze three page replacement algorithms using this simulation.${'\n\n'}1. Create a program which implements the following Page Replacement Algorithms${'\n'}   and simulates a process accessing its pages during operating system at run time:${'\n\n'}    ${'\u2022'} OPT (Optimal)${'\n'}    ${'\u2022'} Second Chance (a FIFO, First In First Out, variant)${'\n'}    ${'\u2022'} Clock${'\n\n'}    The simulation will read a sequence of numbers from a file, pages.txt, and${'\n'}    use those numbers as the page number being accessed in the order the${'\n'}    operating system encounters them. Create this file by hand, the first line${'\n'}    will contain a single integer, which tells your simulation how many frames${'\n'}    of main memory exist. The second line will contain integers, separated by a${'\n'}    space character. These integers are the page numbers, in the order they will${'\n'}    be accessed during the running of the simulation. Note, the integers will be${'\n'}    in range of 0 – 99.${'\n\n'}2. The program shall perform the following:${'\n'}    ${'\u2022'} Upon startup, open the file “pages.txt” and read the first line to determine${'\n'}      the number of frames.${'\n'}    ${'\u2022'} Read the sequence of pages to be processed from the second line in the${'\n'}      "pages.txt" file.${'\n'}    ${'\u2022'} Run each of the algorithms (OPT, Second Chance, and Clock) on the same page${'\n'}      sequence from the step above${'\n'}    ${'\u2022'} Printout the number of faults each algorithm generates to the terminal and${'\n'}      to the file “faults.txt”.${'\n\n'}3. Using the simulation and page replacement algorithms developed in steps 1 & 2${'\n'}   above, perform an analysis of the page replacement algorithms :${'\n'}    ${'\u2022'} Develop at least two different input data sets for analyzing the algorithms.${'\n'}      The sequences of pages in these two sets should be designed such that they${'\n'}      demonstrate the differences in the Second Chance vs Clock algorithms.${'\n'}    ${'\u2022'} Run the input sets through the simulation, collect the data. You should use${'\n'}      at least two different memory systems (different numbers of frames) on${'\n'}      each data set.${'\n'}    ${'\u2022'} Perform an analysis of the data (include controls, variables, outcomes,${'\n'}      and input characterizations).${'\n'}    ${'\u2022'} Document your experiment and findings in your README file. -- Note, your${'\n'}      README file shall contain the usual requirements for a README file (see${'\n'}      READMEformat.pdf file posted on Blackboard) and it shall also include a${'\n'}      summary of your findings from your analysis.${'\n\n'}Your program will be tested by compiling it and executing it on rohan. Your program shall be written such that it compiles and executes cleanly when using any compiler/interpreter available on rohan. Note - you must use a Makefile.${'\n\n'}Create a sub-directory named "a2" in your home directory. Place all of your project files, including your Makefile and a README file into this sub-directory. Your source files SHALL CONTAIN sufficient comments for making the source easy to read. Points will be taken off for poorly (or non) commented source. Name the executable "a2".${'\n\n'}    ${'\u2022'} Create ~/a2 by hand.${'\n'}    ${'\u2022'} Create all necessary project files. Put them into ~/a2.${'\n'}    ${'\u2022'} The Makefile shall create an executable named "pager" in this same directory${'\n'}      (~/a2).${'\n'}    ${'\u2022'} The system call "system()" will NOT be allowed${'\n'}    ${'\u2022'} You are working individually or in teams of two this assignment.${'\n'}    ${'\u2022'} You may use the cc, CC, gcc, or g++ compiler on this assignment.${'\n\n'}TURNING IN YOUR WORK:${'\n'}Make sure that all of your files (all source files, Makefile, README file, test files, etc) are in the a1 sub-directory of your class account and then follow the class assignment turnin procedures as specified in the instructions in Blackboard`,
@@ -533,7 +533,7 @@ const dataFor_Course_08 = [
     },
     {
         id: 1,
-        heading2: 'Programming Assignment #1',
+        heading2: 'Program #1',
         content2: `Chat Bots`,
         heading3: `Details:`,
         content3: `You will do this by developing a project that manages multiple threads writing to a shared file (you aren’t building a chat server, the chat bots write to the shared/common file).You shall implement a program where several chat bots will run, each in their own thread, simultaneously but asynchronously with each other. Each bot shall write the specified text message to one, common shared resource, a file named QUOTE.txt. In order to prevent the data from getting corrupted by other bots, each bot needs to use an appropriate IPC mechanism/algorithm.${'\n\n'}1. When your program starts, it shall do the following:${'\n'}    a. Create a file, named QUOTE.txt, in the current directory (cwd).${'\n'}    b. Have your running process write it’s pid (Process ID) followed by a${'\n'}       Carriage Return and Newline in to the file.${'\n'}    c. Close the file QUOTE.txt.${'\n'}    d. Create a semaphore named FLAG which the threads will use to manage access${'\n'}        to the file QUOTE.txt.${'\n'}    e. Create 7 threads. Use the POSIX version of threads (i.e., pthread_create())${'\n'}    f. Block/wait for all seven threads to complete their work.${'\n'}    g. Once all threads are done, destroy the semaphore, then exit gracefully,${'\n'}       printing a friendly message to the console${'\n\n'}2. Each thread shall perform the following (note, each thread is running concurrently):${'\n'}    a. Periodically (even numbered threads - once every two seconds, odd${'\n'}       numbered threads – once every 3 seconds) get the semaphore SEM; once the${'\n'}       thread has SEM, it will proceed to do the following:${'\n'}            i. Open the file QUOTE.txt and write the thread’s tid (thread id)${'\n'}               followed by “The Quote” (followed by a Carriage Return and Newline)${'\n'}           ii. Write to the console (print to stdout) “Thread <thread id> is${'\n'}               running” followed by a newline.${'\n'}          iii. Close the file QUOTE.txt.${'\n'}           iv. Release the semaphore FLAG.${'\n'}    b. Repeat the above 7 times.${'\n'}    c. exit${'\n\n'}You will need to use the following POSIX system calls for creating and managing the semaphores with:${'\n'}sem_init(), sem_wait(), sem_post(), and sem_destroy().${'\n\n'}I will test your program by compiling it and executing it on rohan. Your program shall be written such that it compiles and executes cleanly when using the cc, gcc, CC, or g++ compiler You shall create a sub-directory named "a1" in your home directory. In it, you shall place your source file(s), your header file, your Makefile (see Blackboard for examples on Makefiles), and a README file (see Blackboard for README requirements). Your source files SHALL CONTAIN sufficient comments for making the source easy to read. Points will be taken off for poorly (or non) commented source. Name the executable "bots".${'\n'}    ${'\u2022'} Create ~/a1 by hand.${'\n'}    ${'\u2022'} Create source files, an include file, a Makefile, and a README file. Put them into ~/a1.${'\n'}    ${'\u2022'} The Makefile shall create an executable named "sem" in this same directory (~/a1).${'\n'}    ${'\u2022'} Here is a nice overview of threads [http://www.llnl.gov/computing/tutorials/pthreads/#Overview].${'\n'}    ${'\u2022'} The system call "system()" will NOT be allowed.You must work in pairs (team of 2) unless approved by the instructor.${'\n\n'}TURNING IN YOUR WORK:${'\n'}Make sure that all of your files (all source files, Makefile, README file, test files, etc) are in the a1 sub- directory of your class account and then follow the class assignment turnin procedures as specified in the instructions in Blackboard${'\n\n'}Note, only ONE of the team members turns in the assignment. State which class account is to be used for testing in the turnin and in the README file.`,

@@ -11,7 +11,7 @@ class Projects extends Component {
     render() {
         return (
           <HashRouter basename="/projects">
-            <div class="main-container">
+            <div class="app-container">
               <Title strings={ data_forTitle } />
               <Carousel thumbnails={ data_forCarousel } />
               <Route path="/" exact component={ Project_01 } />

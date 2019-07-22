@@ -11,7 +11,7 @@ class Contact extends Component {
     render() {
         return (
           <HashRouter basename="/contact">
-            <div class="main-container">
+            <div class="app-container">
               <Title strings={ data_forTitle } />
               <Carousel thumbnails={ data_forCarousel } />
               <Route path="/" exact component={ Contact_01 } />
@@ -39,7 +39,7 @@ const data_forCarousel = [
 const data_forContact_01 = [
     {
         id: 1,
-        photo: `academia-intro-img-02`,
+        background: `contact-intro-background`,
         profile: `contact-profile`,
         heading1: 'STATUS:',
         content1: `PHONE: 1-619-549-1961${'\n'}EMAIL:  K3NT0154@GMAIL.COM`,

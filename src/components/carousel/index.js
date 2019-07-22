@@ -7,7 +7,7 @@ import empty from '../../assets/empty.png';
 function Carousel({ thumbnails }) {
 
     const trail = useTrail(thumbnails.length, {
-        config: { duration: 1100 },
+        config: { duration: 700 },
         from: { width: 0 },
         to: { width: window.innerWidth }
     })
@@ -31,12 +31,12 @@ function Carousel({ thumbnails }) {
                     </svg>
                     {/* Empty image used to override missing image icon from
                       * showing. Actual image imported through index.css. */}
-                    <h3 class="icon-heading">
+                    <h3 class="icon-label">
                       { thumbnails[index].course }
                     </h3>
                     <img class={ thumbnails[index].icon } src={ empty }/>
                   </div>
-                  <div class="carousel-caption">
+                  <div class="icon-caption">
                     <b>{ thumbnails[index].heading1 }</b>
                     { thumbnails[index].content1 }<br/>
                     <b>{ thumbnails[index].heading2 }</b>

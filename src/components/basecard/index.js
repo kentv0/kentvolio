@@ -74,51 +74,52 @@ function Basecard({ deck }) {
                 transform: interpolate(
                     [rot, xscale, yscale], trans),
                     opacity }}>
-              <img class="gray-background" src={ empty }/>
-              <img class={ deck[i].photo } src={ empty }/>
-              <div class="basecard-data-container">
-                {/* Individual style for Welcome slide of Home page. */}
-                <div class="home-intro">
-                  <h1>
-                    { deck[i].welcome1 }
-                  </h1>
-                </div>
-                <div class="basecard-header-data">
+              <div class="centered-data">
+                <h1>
+                  { deck[i].ctext }
+                </h1>
+              </div>
+              <div class="intro-background-container">
+                <img class="tint-background" src={ empty }/>
+                <img class={ deck[i].background } src={ empty }/>
+              </div>
+              <div class="data-container">
+                <div class="profile-container">
                   <img class={ deck[i].profile } src={ empty }/>
-                  <h4 class="heading-01-data">
-                    { deck[i].heading1 }
+                </div>
+                <h4 class="heading-01-data">
+                  { deck[i].heading1 }
+                </h4>
+                <h5 class="content-01-data">
+                  { deck[i].content1 }
+                </h5>
+                <h1 class="heading-02-data">
+                  { deck[i].heading2 }
+                </h1>
+                <h5 class="content-02-data">
+                  { deck[i].content2 }
+                </h5>
+                <div class="bottom-row-container">
+                  <h2 class="heading-03-data">
+                    { deck[i].heading3 }
+                  </h2>
+                  <p class="content-03-data">
+                    { deck[i].content3 }
+                    <img class={ deck[i].image1 } src={ empty }/>
+                  </p>
+                  <h2 class="heading-04-data">
+                    { deck[i].heading4 }
+                  </h2>
+                  <p class="content-04-data">
+                    { deck[i].content4 }
+                    <img class={ deck[i].image2 } src={ empty }/>
+                  </p>
+                  <h4 class="heading-05-data">
+                    { deck[i].heading5 }
                   </h4>
-                  <h5 class="content-01-data">
-                    { deck[i].content1 }
-                  </h5>
-                  <h1 class="heading-02-data">
-                    { deck[i].heading2 }
-                  </h1>
-                  <h5 class="content-02-data">
-                    { deck[i].content2 }
-                  </h5>
-                  <div class="basecard-body-data">
-                    <h2 class="heading-03-data">
-                      { deck[i].heading3 }
-                    </h2>
-                    <p class="content-03-data">
-                      { deck[i].content3 }
-                      <img class={ deck[i].image1 } src={ empty }/>
-                    </p>
-                    <h2 class="heading-04-data">
-                      { deck[i].heading4 }
-                    </h2>
-                    <p class="content-04-data">
-                      { deck[i].content4 }
-                      <img class={ deck[i].image2 } src={ empty }/>
-                    </p>
-                    <h4 class="heading-05-data">
-                      { deck[i].heading5 }
-                    </h4>
-                    <p class="content-05-data">
-                      { deck[i].content5 }
-                    </p>
-                  </div>
+                  <p class="content-05-data">
+                    { deck[i].content5 }
+                  </p>
                 </div>
               </div>
             </animated.div>

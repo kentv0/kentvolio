@@ -11,7 +11,7 @@ class Home extends Component {
     render() {
         return (
           <HashRouter basename="/home">
-            <div class="main-container">
+            <div class="app-container">
               <Title strings={ data_forTitle } />
               <Carousel thumbnails={ data_forCarousel } />
               <Route path="/" exact component={ Welcome } />
@@ -38,16 +38,16 @@ const data_forCarousel = [
 const data_forWelcome = [
     {
         id: 1,
-        photo: `home-intro-img-01`,
+        background: `home-intro-background`,
         profile: 'home-profile',
         heading1: 'STATUS:',
-        content1: `EMPLOYMENT:      UNEMPLOYED${'\n'}EDUCATION:         BACHELORS${'\n'}DEGREE:              COMPUTER SCIENCE${'\n'}MARITAL:             SINGLE`,
+        content1: `EMPLOYMENT:      UNEMPLOYED${'\n'}EDUCATION:         BACHELORS${'\n'}DEGREE:               COMPUTER SCIENCE`,
         heading2: 'KENT VO',
         content2: `SAN DIEGO, UNITED STATES`,
         heading3: `QUALIFICATIONS:`,
         content3: `Efficient and goal-oriented Computer Scientist with professional experience on mission critical systems in the defense industry and a wide variety of work in continuous development. Skilled at self-disciplining and motivating the focus in others. Passionate in technology that help improve better lives.`,
         heading4: `${'\n'}TECHNICAL SKILLS:`,
-        content4: `${'\u2022'} Cloud-based Technologies:${'\n'}  Docker, Kubernetes, Azure, Pivotal Cloud Foundry${'\n\n\u2022'} Infrastructure:${'\n'}  CI/CD, JIRA/Confluence, GitLab, Rancher, Helm Charts, Nexus, HipChat, BitBucket, FishEye${'\n\n\u2022'} Development Tools:${'\n'}  Spring, Swagger, Gradle, Maven, Tomcat, GIT, npm, NodeJS, AngularJS, Cucumber, Selenium, JUnit, IntelliJ, Eclipse, Kafka,${'\n'}  ElasticSearch, ReactJS, MongoDB, TestNG${'\n\n\u2022'} Programming Languages:${'\n'}  Java, Bash, Sh, HTML, CSS, JavaScript, XML, YML, C/C++, SQL${'\n\n\u2022'} Operating Systems:${'\n'}  Linux (RHEL/Ubuntu), Unix, Windows, Mac`
+        content4: `${'\u2022'} Cloud-based Technologies:${'\n'}  Docker, Kubernetes, Azure, Pivotal Cloud Foundry${'\n\n\u2022'} Infrastructure:${'\n'}  CI/CD, JIRA/Confluence, GitLab, Rancher, Helm Charts, Nexus, HipChat, BitBucket, FishEye${'\n\n\u2022'} Development Tools:${'\n'}  Spring, Swagger, Gradle, Maven, Tomcat, GIT, npm, NodeJS, AngularJS, Cucumber, Selenium, JUnit,${'\n'}  IntelliJ, Eclipse, Kafka, ElasticSearch, ReactJS, MongoDB, TestNG${'\n\n\u2022'} Programming Languages:${'\n'}  Java, Bash, Sh, HTML, CSS, JavaScript, XML, YML, C/C++, SQL${'\n\n\u2022'} Operating Systems:${'\n'}  Linux (RHEL/Ubuntu), Unix, Windows, Mac`
     }
 ]
 
