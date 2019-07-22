@@ -19,21 +19,18 @@ function Carousel({ thumbnails }) {
             <ul>
               <li>
                 <NavLink exact to={ thumbnails[index].link }>
-                  <div class="carousel-icon-container">
+                  <div class="carousel-icon">
                     <svg
-                        stroke="rgba(227,228,230, 0.8)"
-                        stroke-width="8"
-                        width="auto"
-                        height="auto"
-                        viewBox="0 0 527 512"
+                        class={ thumbnails[index].svgstyle }
+                        viewBox="0 0 512 512"
                         style={{ position: "absolute", opacity: 0.7 }}>
-                      <path fill="rgba(227,228,230, 0.8)" d={ thumbnails[index].svg }/>
+                      <path fill="rgba(227,228,230, 0.8)" d={ thumbnails[index].svgdraw }/>
                     </svg>
                     {/* Empty image used to override missing image icon from
                       * showing. Actual image imported through index.css. */}
-                    <h3 class="icon-label">
+                    <h4 class="icon-label">
                       { thumbnails[index].course }
-                    </h3>
+                    </h4>
                     <img class={ thumbnails[index].icon } src={ empty }/>
                   </div>
                   <div class="icon-caption">

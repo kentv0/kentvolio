@@ -41,23 +41,21 @@ function NavBar() {
           <Route path="/contact" component={ Contact } />
         </div>
         <animated.div class="navbar-container" style={ spring }>
-          <div class="navbar-main">
-            { trail.map(({ opacity }, index) => (
-                <animated.div key={ data_forNavBar[index] } style={{ opacity }}>
-                  <ul>
-                    <li>
-                      <NavLink exact to={ data_forNavBar[index].link }>
-                        <svg class="navbar-element" width="auto" height="auto" viewBox="0 0 512 512">
-                          <path
-                              fill="rgba(227,228,230, 0.8)"
-                              d={ data_forNavBar[index].svg }/>
-                        </svg>
-                      </NavLink>
-                    </li>
-                  </ul>
-                </animated.div>
-            ))}
-          </div>
+          { trail.map(({ opacity }, index) => (
+              <animated.div key={ data_forNavBar[index] } style={{ opacity }}>
+                <ul>
+                  <li>
+                    <NavLink exact to={ data_forNavBar[index].link }>
+                      <svg class="navbar-element" viewBox="0 0 512 512">
+                        <path
+                            fill="rgba(227,228,230, 0.8)"
+                            d={ data_forNavBar[index].svg }/>
+                      </svg>
+                    </NavLink>
+                  </li>
+                </ul>
+              </animated.div>
+          ))}
         </animated.div>
       </HashRouter>
     )
