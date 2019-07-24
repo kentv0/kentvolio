@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7932f69332816773fa74c7ceb08a582a",
+    "revision": "07a3fa4224d825313f864fbdbde6c9af",
     "url": "/index.html"
   },
   {
-    "revision": "de120051d38ddb3f7c0b",
-    "url": "/static/css/main.5c233edc.chunk.css"
+    "revision": "44c28b8c655f4aab247b",
+    "url": "/static/css/main.1774531e.chunk.css"
   },
   {
     "revision": "3220aa3f2ed5130fe591",
     "url": "/static/js/2.2b155ea5.chunk.js"
   },
   {
-    "revision": "de120051d38ddb3f7c0b",
-    "url": "/static/js/main.83f60f3b.chunk.js"
+    "revision": "44c28b8c655f4aab247b",
+    "url": "/static/js/main.16613947.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "8b99de31b604677635a4010d6b7620bf",
-    "url": "/static/media/academia-intro-background.8b99de31.jpg"
+    "revision": "89a8f328a70451c43e9dc537f0fe29b2",
+    "url": "/static/media/academia-intro-background.89a8f328.jpg"
   },
   {
     "revision": "5e9ccb5e935751527d9c595bb5f3a782",
     "url": "/static/media/academia-profile.5e9ccb5e.png"
   },
   {
-    "revision": "d8bc971803cf23d6fef83dd7c97ba40f",
-    "url": "/static/media/contact-intro-background.d8bc9718.jpg"
+    "revision": "738273b10ddc7270bb588253b8f57a29",
+    "url": "/static/media/contact-intro-background.738273b1.jpg"
   },
   {
     "revision": "36e6eae55a08d55f95fb89440200242c",
@@ -48,12 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gray-blur.ea6f7e00.jpg"
   },
   {
-    "revision": "ac8da1e4349011ba7d542f7a286473bd",
-    "url": "/static/media/home-intro-background.ac8da1e4.jpg"
+    "revision": "c145a4e7089803a7d021f2c04a4ae0a4",
+    "url": "/static/media/home-intro-background.c145a4e7.jpg"
   },
   {
     "revision": "f0fd7912115c2807562aa523c8a9d19d",
     "url": "/static/media/home-profile.f0fd7912.png"
+  },
+  {
+    "revision": "18a7b09c2548a549f84e73af69a13bc7",
+    "url": "/static/media/industry-intro-background.18a7b09c.jpg"
   },
   {
     "revision": "a14f3e1354c6b80fed4110ffdc79c0c2",
