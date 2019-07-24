@@ -76,10 +76,8 @@ function Basecard({ deck }) {
                   { deck[i].ctext }
                 </h1>
               </div>
-              <div class="intro-background-container">
-                <img class="tint-background" src={ empty }/>
-                <img class={ deck[i].background } src={ empty }/>
-              </div>
+              <img class="tint-background" src={ empty }/>
+              <img class={ deck[i].background } src={ empty }/>
               <div class="data-container">
                 <div class="profile-container">
                   <img class={ deck[i].profile } src={ empty }/>
@@ -87,8 +85,11 @@ function Basecard({ deck }) {
                 <h4 class="heading-01-data">
                   { deck[i].heading1 }
                 </h4>
-                <h5 class="content-01-data">
+                <h5 class="content-01-data1">
                   { deck[i].content1 }
+                </h5>
+                <h5 class="content-01-data2">
+                  { deck[i].content1add }
                 </h5>
                 <h1 class="heading-02-data">
                   { deck[i].heading2 }
