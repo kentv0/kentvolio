@@ -9,26 +9,24 @@ const from = i => ({
     y: 0,
     xscale: 0.8,
     yscale: 1,
-    rot: 0,
-    opacity: 0})
+    opacity: 0
+  })
 
 const to = i => ({
     /* Move cards left, right, up, and down. */
     x: i * -20,
-    y: i * -10,
+    y: i * -9,
     /* Scales cards by width and height. */
     xscale: 0.8,
     yscale: 1,
-    rot: 0,
     opacity: 1,
     delay: i * 100 })
 
-const trans = (r, sx, sy) => `
+const trans = (sx, sy) => `
     scaleX(${sx})
     scaleY(${sy})`
 
 function Basecard({ deck }) {
-
     /* Create springs for each card in deck. */
     const [springs, set] = useSprings(deck.length, i => ({
             from: from(i), ...to(i)
@@ -41,20 +39,18 @@ function Basecard({ deck }) {
     const bind = useGesture(({
             args: [index], down, delta: [xDelta],
             distance, direction: [xDir], velocity }) => {
-        const trigger = velocity > 0.2 
+        const trigger = velocity > 1
         const dir = xDir < 0 ? -1 : -1
-        if (!down && trigger) gone.add(index) 
+        if (!down && trigger) gone.add(index)
         set(i => {
-            if (index !== i) return 
+            if (index !== i) return
             const isGone = gone.has(index)
-            const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0 
-            const rot = xDelta / 100 + (isGone ? dir * velocity : 0)
+            const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0
             /* Scale active cards by width and height. */
             const xscale = down ? 0.9 : 0.8
-            const yscale = down ? 1.1 : 1
+            const yscale = down ? 1.1 : 1  
             return {
                 x,
-                rot,
                 xscale,
                 yscale,
                 delay: undefined,
@@ -63,16 +59,17 @@ function Basecard({ deck }) {
         /* Resets deck after last one is swiped. */
         if (!down && gone.size === deck.length) setTimeout(() =>
                 gone.clear() || set(i => to(i)), 600)
+
     })
 
     return(
-        springs.map(({ x, y, rot, xscale, yscale, opacity }, i) => (
+        springs.map(({ x, y, xscale, yscale, opacity }, i) => (
           <animated.div class="basecard-container" key={i} style={{
               transform: interpolate([x, y], (x, y) =>
-              `translate3d(${x}px,${y}px,0)`) }}>
+              `translate3d(${x}px, ${y}px, 0)`) }}>
             <animated.div class="basecard-main" {...bind(i)} style={{
                 transform: interpolate(
-                    [rot, xscale, yscale], trans),
+                    [xscale, yscale], trans),
                     opacity }}>
               <div class="centered-data">
                 <h1>
