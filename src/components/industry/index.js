@@ -65,7 +65,6 @@ const data_forCarousel = [
 const data_forIntern_01 = [
     {
         id: 6,
-        background: '#8d8d91',
         heading2: `Internship #1`,
         content2: `Planning and Decision Aid Support`,
         heading3: `Login Unit Test for Chat-Locker`,
@@ -76,7 +75,6 @@ const data_forIntern_01 = [
     },
     {
         id: 5,
-        background: '#8d8d91',
         heading2: `Internship #1`,
         content2: `Planning and Decision Aid Support`,
         heading3: `Best Practices`,
@@ -86,7 +84,6 @@ const data_forIntern_01 = [
     },
     {
         id: 4,
-        background: '#8d8d91',
         heading2: `Internship #1`,
         content2: `Planning and Decision Aid Support`,
         heading3: `Installing WebDriver 3 with Safari Driver:`,
@@ -95,7 +92,6 @@ const data_forIntern_01 = [
     },
     {
         id: 3,
-        background: '#8d8d91',
         heading2: `Internship #1`,
         content2: `Planning and Decision Aid Support`,
         heading3: `Installing Chat Locker:`,
@@ -103,7 +99,6 @@ const data_forIntern_01 = [
     },
     {
         id: 2,
-        background: '#8d8d91',
         heading2: `Internship #1`,
         content2: `Planning and Decision Aid Support`,
         heading3: `Introduction:`,
@@ -114,7 +109,7 @@ const data_forIntern_01 = [
     {
         id: 1,
         profile: `industry-profile`,
-        background: '#8D8D91',
+        background: `industry-intro-background`,
         heading1: `STATUS:`,
         content1: `TYPE:${'\n'}DURATION:${'\n'}PROGRESS:${'\n'}CLEARANCE:`,
         content1add: `PART-TIME${'\n'}4 MONTHS${'\n'}COMPLETED${'\n'}SECRET`,
@@ -130,7 +125,6 @@ const data_forIntern_01 = [
 const data_forIntern_02 = [
     {
         id: 2,
-        background: '#8d8d91',
         heading2: 'Internship #2',
         content2: 'Wiki/JIRA Tool Development',
         heading3: 'Statement of Work:',
@@ -139,7 +133,7 @@ const data_forIntern_02 = [
     {
         id: 1,
         profile: 'industry-profile',
-        background: '#8D8D91',
+        background: `industry-intro-background`,
         heading1: 'STATUS:',
         content1: `TYPE:${'\n'}DURATION:${'\n'}PROGRESS:${'\n'}CLEARANCE:`,
         content1add: `PART-TIME${'\n'}5 MONTHS${'\n'}COMPLETED${'\n'}SECRET`,

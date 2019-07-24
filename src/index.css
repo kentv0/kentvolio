@@ -380,30 +380,40 @@ a:active {
 
 .home-intro-background {
   width: 100%;
-  opacity: 0.55;
+  opacity: 0.45;
   position: absolute;
   background: url("./assets/home-intro-background.jpg")
-              center center / 84% 84%
+              center center / contain
+              no-repeat
+              fixed;
+}
+
+.industry-intro-background {
+  width: 100%;
+  opacity: 0.3;
+  position: absolute;
+  background: url("./assets/industry-intro-background.jpg")
+              center center / contain
               no-repeat
               fixed;
 }
 
 .academia-intro-background {
   width: 100%;
-  opacity: 0.45;
+  opacity: 0.3;
   position: absolute;
   background: url("./assets/academia-intro-background.jpg")
-              center top / 90% 77%
+              center center / contain
               no-repeat
               fixed;
 }
 
 .contact-intro-background {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.55;
   position: absolute;
   background: url("./assets/contact-intro-background.jpg")
-              center top / 80% 80%
+              center center / contain
               no-repeat
               fixed;
 }
