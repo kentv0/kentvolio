@@ -71,11 +71,6 @@ function Basecard({ deck }) {
                 transform: interpolate(
                     [xscale, yscale], trans),
                     opacity }}>
-              <div class="centered-data">
-                <h1>
-                  { deck[i].ctext }
-                </h1>
-              </div>
               <img class="tint-background" src={ empty }/>
               <img class={ deck[i].background } src={ empty }/>
               <div class="data-container">

@@ -219,35 +219,7 @@ a:active {
               center 60% / 50% 35%;
 }
 
-/************************************ Home ***************^^*******************/
-.centered-data {
-  width: 100%;
-  height: 100%;
-  margin: -25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  content: "\A";
-  text-align: center;
-  line-height: 1px;
-  letter-spacing: 2px;
-  color: rgba(227, 228, 230, 0.8);
-  z-index: 2;
-}
-
 /********************************** Profile ***********************************/
-.profile-container {
-/*
-  border: solid 2px violet;
-*/
-  padding-bottom: 20px;
-  padding-right: 20px;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2; 
-}
 .home-profile {
   width: 100%;
   height: 100%;
@@ -299,7 +271,7 @@ a:active {
   padding-left: 35px;
   position: absolute;
   display: grid;
-  grid-template: 6% 33% 61% / 14% 22% 22% 37% 5%;
+  grid-template: 6% 33% 61% / 14% 20% 20% 41% 5%;
   content: "\A";
   line-height: 1px;
   letter-spacing: 2.5px;
@@ -308,20 +280,16 @@ a:active {
   z-index: 4;
 }
 
-.bottom-row-container {
+.profile-container {
 /*
-  border: solid 2px blue;
+  border: solid 2px violet;
 */
-  width: 100%;
-  height: 100%;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  grid-row-start: 1;
+  grid-row-end: 3;
   grid-column-start: 1;
-  grid-column-end: 5;
-  content: "\A";
-  line-height: 1px;
-  letter-spacing: 2.5px;
-  color: rgba(227, 228, 230, 0.8);
+  grid-column-end: 2; 
 }
 
 .heading-01-data {
@@ -380,7 +348,22 @@ a:active {
   grid-row-end: 3;
   grid-column-start: 4;
   grid-column-end: 5;
+}
 
+.bottom-row-container {
+/*
+  border: solid 2px blue;
+*/
+  width: 100%;
+  height: 100%;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  content: "\A";
+  line-height: 1px;
+  letter-spacing: 2.5px;
+  color: rgba(227, 228, 230, 0.8);
 }
 
 .content-05-data {
