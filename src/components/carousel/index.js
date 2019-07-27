@@ -4,9 +4,9 @@ import { Route, NavLink, HashRouter } from "react-router-dom"
 
 import empty from '../../assets/empty.png';
 
-function Carousel({ thumbnails }) {
+function Carousel({ items }) {
 
-    const trail = useTrail(thumbnails.length, {
+    const trail = useTrail(items.length, {
         config: { duration: 700 },
         from: { width: 0 },
         to: { width: window.innerWidth }
@@ -15,31 +15,31 @@ function Carousel({ thumbnails }) {
     return(
       <div class="carousel-container">
         { trail.map(({ ...rest }, index) => (
-          <animated.div key={ thumbnails[index] } style={{ ...rest }}>
+          <animated.div key={ items[index] } style={{ ...rest }}>
             <ul>
               <li>
-                <NavLink exact to={ thumbnails[index].link }>
+                <NavLink exact to={ items[index].link }>
                   <div class="carousel-icon">
                     <svg
-                        class={ thumbnails[index].svgstyle }
+                        class={ items[index].svgstyle }
                         viewBox="0 0 512 512"
                         style={{ position: "absolute", opacity: 0.7 }}>
-                      <path fill="rgba(227,228,230, 0.8)" d={ thumbnails[index].svgdraw }/>
+                      <path fill="rgba(227,228,230, 0.8)" d={ items[index].svgdraw }/>
                     </svg>
                     {/* Empty image used to override missing image icon from
                       * showing. Actual image imported through index.css. */}
                     <h4 class="icon-label">
-                      { thumbnails[index].course }
+                      { items[index].course }
                     </h4>
-                    <img class={ thumbnails[index].icon } src={ empty }/>
+                    <img class={ items[index].icon } src={ empty }/>
                   </div>
                   <div class="icon-caption">
-                    <b>{ thumbnails[index].heading1 }</b>
-                    { thumbnails[index].content1 }<br/>
-                    <b>{ thumbnails[index].heading2 }</b>
-                    { thumbnails[index].content2 }<br/>
-                    <b>{ thumbnails[index].heading3 }</b>
-                    { thumbnails[index].content3 }
+                    <b>{ items[index].heading1 }</b>
+                    { items[index].content1 }<br/>
+                    <b>{ items[index].heading2 }</b>
+                    { items[index].content2 }<br/>
+                    <b>{ items[index].heading3 }</b>
+                    { items[index].content3 }
                   </div>
                 </NavLink>
               </li>

@@ -92,28 +92,35 @@ function Basecard({ deck }) {
                 <h5 class="content-02-data">
                   { deck[i].content2 }
                 </h5>
-                <div class="bottom-row-container">
-                  <h2 class="heading-03-data">
+                <h2 class="heading-03-data">
                     { deck[i].heading3 }
-                  </h2>
-                  <p class="content-03-data">
+                </h2>
+                <div class="bottom-row-container">
+                  <p>
                     { deck[i].content3 }
-                    <img class={ deck[i].image1 } src={ empty }/>
                   </p>
-                  <h2 class="heading-04-data">
+                    <div class="image1-container">
+                      <img class={ deck[i].image1 } src={ empty }/>
+                    </div>
+                  <h2>
                     { deck[i].heading4 }
                   </h2>
-                  <p class="content-04-data">
+                  <p>
                     { deck[i].content4 }
+                  </p>
+                  <div class="image1-container">
                     <img class={ deck[i].image2 } src={ empty }/>
-                  </p>
-                  <h4 class="heading-05-data">
-                    { deck[i].heading5 }
-                  </h4>
-                  <p class="content-05-data">
-                    { deck[i].content5 }
-                  </p>
+                  </div>
                 </div>
+                <h2 class="heading-05-data">
+                    { deck[i].heading5 }
+                </h2>
+                <p class="ruler">
+                  { deck[i].ruler }
+                </p>
+                <p class="code-block">
+                  { deck[i].content5 }
+                </p>
               </div>
             </animated.div>
           </animated.div>
