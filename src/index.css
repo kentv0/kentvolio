@@ -317,7 +317,7 @@ a:active {
   padding-left: 35px;
   position: absolute;
   display: grid;
-  grid-template: 6% 30% auto auto / 3% 14% 20% 20% 39% 5%;
+  grid-template: 6% 30% auto auto / 3% 12% 21% 21% 39% 5%;
   content: "\A";
   line-height: 1px;
   letter-spacing: 2.5px;
