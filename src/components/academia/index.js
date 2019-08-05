@@ -7,21 +7,21 @@ import Basecard from "../basecard"
 import Carousel from "../carousel"
 
 const Introduction = () => ( <Basecard deck={ data_forIntro } /> )
-const Introduction_SideBar = () => ( <SideBar items={ data_forIntro_SideBar } /> )
+const Introduction_SideBar = () => ( <SideBar items={ dataFor_emptySideBar } /> )
 
-const CS_Course_01 = () => ( <SideBar items={ dataFor_Course_01 } /> )
+const CS_Course_01 = () => ( <SideBar items={ dataFor_Course_01_SideBar } /> )
 const CS_Course_01_Prog_01 = () => ( <Basecard deck={ dataFor_Course_01_Prog_01 } /> )
 const CS_Course_01_Prog_02 = () => ( <Basecard deck={ dataFor_Course_01_Prog_02 } /> )
 const CS_Course_01_Prog_03 = () => ( <Basecard deck={ dataFor_Course_01_Prog_03 } /> )
 const CS_Course_01_Prog_04 = () => ( <Basecard deck={ dataFor_Course_01_Prog_04 } /> )
 
-const CS_Course_02 = () => ( <SideBar items={ dataFor_Course_02 } /> )
+const CS_Course_02 = () => ( <SideBar items={ dataFor_Course_02_SideBar } /> )
 const CS_Course_02_Prog_01 = () => ( <Basecard deck={ dataFor_Course_02_Prog_01 } /> )
 const CS_Course_02_Prog_02 = () => ( <Basecard deck={ dataFor_Course_02_Prog_02 } /> )
 const CS_Course_02_Prog_03 = () => ( <Basecard deck={ dataFor_Course_02_Prog_03 } /> )
 const CS_Course_02_Prog_04 = () => ( <Basecard deck={ dataFor_Course_02_Prog_04 } /> )
 
-const CS_Course_03 = () => ( <SideBar items={ dataFor_Course_03 } /> )
+const CS_Course_03 = () => ( <SideBar items={ dataFor_Course_03_SideBar } /> )
 const CS_Course_03_Prog_01 = () => ( <Basecard deck={ dataFor_Course_03_Prog_01 } /> )
 const CS_Course_03_Prog_02 = () => ( <Basecard deck={ dataFor_Course_03_Prog_02 } /> )
 const CS_Course_03_Prog_03 = () => ( <Basecard deck={ dataFor_Course_03_Prog_03 } /> )
@@ -29,36 +29,36 @@ const CS_Course_03_Prog_04 = () => ( <Basecard deck={ dataFor_Course_03_Prog_04 
 const CS_Course_03_Prog_05 = () => ( <Basecard deck={ dataFor_Course_03_Prog_05 } /> )
 const CS_Course_03_Prog_06 = () => ( <Basecard deck={ dataFor_Course_03_Prog_06 } /> )
 
-const CS_Course_04 = () => ( <SideBar items={ dataFor_Course_04 } /> )
+const CS_Course_04 = () => ( <SideBar items={ dataFor_Course_04_SideBar } /> )
 const CS_Course_04_Prog_01 = () => ( <Basecard deck={ dataFor_Course_04_Prog_01 } /> )
 const CS_Course_04_Prog_02 = () => ( <Basecard deck={ dataFor_Course_04_Prog_02 } /> )
 const CS_Course_04_Prog_03 = () => ( <Basecard deck={ dataFor_Course_04_Prog_03 } /> )
 
-const CS_Course_05 = () => ( <SideBar items={ dataFor_Course_05 } /> )
+const CS_Course_05 = () => ( <SideBar items={ dataFor_Course_05_SideBar } /> )
 const CS_Course_05_Prog_01 = () => ( <Basecard deck={ dataFor_Course_05_Prog_01 } /> )
 const CS_Course_05_Prog_02 = () => ( <Basecard deck={ dataFor_Course_05_Prog_02 } /> )
 const CS_Course_05_Prog_03 = () => ( <Basecard deck={ dataFor_Course_05_Prog_03 } /> )
 const CS_Course_05_Prog_04 = () => ( <Basecard deck={ dataFor_Course_05_Prog_04 } /> )
 
-const CS_Course_06 = () => ( <SideBar items={ dataFor_Course_06 } /> )
+const CS_Course_06 = () => ( <SideBar items={ dataFor_Course_06_SideBar } /> )
 const CS_Course_06_Prog_01 = () => ( <Basecard deck={ dataFor_Course_06_Prog_01 } /> )
 const CS_Course_06_Prog_02 = () => ( <Basecard deck={ dataFor_Course_06_Prog_02 } /> )
 const CS_Course_06_Prog_03 = () => ( <Basecard deck={ dataFor_Course_06_Prog_03 } /> )
 const CS_Course_06_Prog_04 = () => ( <Basecard deck={ dataFor_Course_06_Prog_04 } /> )
 
-const CS_Course_07 = () => ( <SideBar items={ dataFor_Course_07 } /> )
+const CS_Course_07 = () => ( <SideBar items={ dataFor_Course_07_SideBar } /> )
 const CS_Course_07_Prog_01 = () => ( <Basecard deck={ dataFor_Course_07_Prog_01 } /> )
 const CS_Course_07_Prog_02 = () => ( <Basecard deck={ dataFor_Course_07_Prog_02 } /> )
 const CS_Course_07_Prog_03 = () => ( <Basecard deck={ dataFor_Course_07_Prog_03 } /> )
 const CS_Course_07_Prog_04 = () => ( <Basecard deck={ dataFor_Course_07_Prog_04 } /> )
 const CS_Course_07_Prog_05 = () => ( <Basecard deck={ dataFor_Course_07_Prog_05 } /> )
 
-const CS_Course_08 = () => ( <SideBar items={ dataFor_Course_08 } /> )
+const CS_Course_08 = () => ( <SideBar items={ dataFor_Course_08_SideBar } /> )
 const CS_Course_08_Prog_01 = () => ( <Basecard deck={ dataFor_Course_08_Prog_01 } /> )
 const CS_Course_08_Prog_02 = () => ( <Basecard deck={ dataFor_Course_08_Prog_02 } /> )
 const CS_Course_08_Prog_03 = () => ( <Basecard deck={ dataFor_Course_08_Prog_03 } /> )
 
-const CS_Course_09 = () => ( <SideBar items={ dataFor_Course_09 } /> )
+const CS_Course_09 = () => ( <SideBar items={ dataFor_Course_09_SideBar } /> )
 const CS_Course_09_Prog_01 = () => ( <Basecard deck={ dataFor_Course_09_Prog_01 } /> )
 const CS_Course_09_Prog_02 = () => ( <Basecard deck={ dataFor_Course_09_Prog_02 } /> )
 
@@ -157,27 +157,6 @@ const data_forIntro = [
         content3: `    ${'\u2022'} Awarded on Dean's List`,
         heading4: `${'\n'}INVOLVEMENT:`,
         content4: `    ${'\u2022'} BEST (Building Essential Skills and Talents) Summer Bridge Program${'\n'}    ${'\u2022'} Educational Opportunity Program (EOP)${'\n'}    ${'\u2022'} Alpha Psi Rho Fraternity Inc.${'\n\n\n\n\n\n\n\n'}`
-    }
-]
-
-const data_forIntro_SideBar = [
-    {
-        id: 1
-    },
-    {
-        id: 2
-    },
-    {
-        id: 3
-    },
-    {
-        id: 4
-    },
-    {
-        id: 5
-    },
-    {
-        id: 6
     }
 ]
 
@@ -302,9 +281,33 @@ const data_forCarousel = [
 ]
 
 
+/***** Empty Side Bar to render on introduction slide. *****/
+
+const dataFor_emptySideBar = [
+    {
+        id: 1
+    },
+    {
+        id: 2
+    },
+    {
+        id: 3
+    },
+    {
+        id: 4
+    },
+    {
+        id: 5
+    },
+    {
+        id: 6
+    }
+]
+
+
 /***** CS-237: Machine Organization & Assembly Language *****/
 
-const dataFor_Course_01 = [
+const dataFor_Course_01_SideBar = [
     {
         id: 1,
         name: `Program #1`,
@@ -424,7 +427,7 @@ const dataFor_Course_01_Prog_04 = [
 
 /***** CS-310: Data Structures *****/
 
-const dataFor_Course_02 = [
+const dataFor_Course_02_SideBar = [
     {
         id: 1,
         name: `Program #1`,
@@ -592,7 +595,7 @@ const dataFor_Course_02_Prog_04 = [
 
 /***** CS-320: Programming Languages *****/
 
-const dataFor_Course_03 = [
+const dataFor_Course_03_SideBar = [
     {
         id: 1,
         name: `Program #1`,
@@ -760,7 +763,7 @@ const dataFor_Course_03_Prog_06 = [
 
 /***** CS-370: Computer Architecture *****/
 
-const dataFor_Course_04 = [
+const dataFor_Course_04_SideBar = [
     {
         id: 1,
         name: `Lab #1`,
@@ -853,7 +856,7 @@ const dataFor_Course_04_Prog_03 = [
 
 /***** CS-514: Database Theory & Implementation *****/
 
-const dataFor_Course_05 = [
+const dataFor_Course_05_SideBar = [
     {
         id: 1,
         name: `Program #1`,
@@ -966,7 +969,7 @@ const dataFor_Course_05_Prog_04 = [
 
 /***** CS-520: Advanced Programming Languages *****/
 
-const dataFor_Course_06 = [
+const dataFor_Course_06_SideBar = [
     {
         id: 1,
         name: `Program #1`,
@@ -1084,7 +1087,7 @@ const dataFor_Course_06_Prog_04 = [
 
 /***** CS-530: Systems Programming *****/
 
-const dataFor_Course_07 = [
+const dataFor_Course_07_SideBar = [
     {
         id: 1,
         name: `Program #1`,
@@ -1234,7 +1237,7 @@ const dataFor_Course_07_Prog_05 = [
 
 /***** CS-570: Operating Systems *****/
 
-const dataFor_Course_08 = [
+const dataFor_Course_08_SideBar = [
     {
         id: 1,
         name: `Program #1`,
@@ -1323,7 +1326,7 @@ const dataFor_Course_08_Prog_03 = [
 
 /***** CS-596: Wireless Networks *****/
 
-const dataFor_Course_09 = [
+const dataFor_Course_09_SideBar = [
     {
         id: 1,
         name: ``,
