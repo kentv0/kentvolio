@@ -141,7 +141,7 @@ const dataFor_Project_01_Part_01 = [
         heading3: `Docker Desktop for Windows:`,
         content3: `1. Download & Install${'\n'}      a. Browse to https://hub.docker.com/editions/community/docker-ce-desktop-windows${'\n\n'}2. Run & Start Docker${'\n'}      a. Press the Windows Key and search for "Docker"${'\n'}      b. Click and run the Docker application`,
         heading4: `Docker Desktop for Mac:`,
-        content4: `1. Download & Install${'\n'}      a. Browse to https://download.docker.com/mac/stable/Docker.dmg${'\n\n'}2. Run & Start Docker${'\n'}      a. Press the Command + Spacebar Key and search "Docker" then press the enter key.${'\n'}      b. Verify Docker is successfully running by opening a Terminal and entering the following Docker command:${'\n'}        $ docker version`
+        content4: `1. Download & Install${'\n'}      a. Download the Docker installation image${'\n'}          https://download.docker.com/mac/stable/Docker.dmg${'\n'}      b. Open and run the installation${'\n'}      c. Verify Docker successfully installed by entering the following Docker command:${'\n'}          $ docker version${'\n'}      d. The following should output:${'\n'}          Client: Docker Engine - Community${'\n'}           Version: 19.03.1${'\n'}          ...${'\n\n'}2. Run & Start Docker${'\n'}      a. Press the Command + Spacebar Key and search "Docker" then press the enter key.${'\n'}      b. Verify Docker is successfully running by opening a Terminal and entering the following Docker command:${'\n'}        $ docker version`
     },
     /*
     {
