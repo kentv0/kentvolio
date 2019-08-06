@@ -132,7 +132,7 @@ const dataFor_Project_01_Part_01 = [
         heading2: `Project #1`,
         content2: `Cloud Infrastructure`,
         heading3: `Nexus:`,
-        content3: `1. Launch a Command Prompt (as Adminstrator)${'\n\n'}2. Run Docker image of Nexus locally:${'\n'}    C:\\Users> docker run -d -p 8081:8081 --name nexus --restart always sonatype/nexus3`
+        content3: `1. Launch a Terminal${'\n\n'}2. Run Docker Container of Nexus locally:${'\n'}    $ docker run -d -p 8081:8081 --name nexus --restart always sonatype/nexus3${'\n\n'}3. Verify Nexus is running (takes a few minutes)${'\n'}    Browse to "http://localhost:8081"${'\n\n'}4. The "Nexus Repository Manager" welcome page should show`
     },
     {
         id: 2,
@@ -141,7 +141,7 @@ const dataFor_Project_01_Part_01 = [
         heading3: `Docker Desktop for Windows:`,
         content3: `1. Download & Install${'\n'}      a. Browse to https://hub.docker.com/editions/community/docker-ce-desktop-windows${'\n\n'}2. Run & Start Docker${'\n'}      a. Press the Windows Key and search for "Docker"${'\n'}      b. Click and run the Docker application`,
         heading4: `Docker Desktop for Mac:`,
-        content4: `1. Download & Install${'\n'}      a. Download the Docker installation image${'\n'}          https://download.docker.com/mac/stable/Docker.dmg${'\n'}      b. Open and run the installation${'\n'}      c. Verify Docker successfully installed by entering the following Docker command:${'\n'}          $ docker version${'\n'}      d. The following should output:${'\n'}          Client: Docker Engine - Community${'\n'}           Version: 19.03.1${'\n'}          ...${'\n\n'}2. Run & Start Docker${'\n'}      a. Press the Command + Spacebar Key and search "Docker" then press the enter key.${'\n'}      b. Verify Docker is successfully running by opening a Terminal and entering the following Docker command:${'\n'}        $ docker version`
+        content4: `1. Download & Install${'\n'}      a. Download the Docker installation image${'\n\n'}          https://download.docker.com/mac/stable/Docker.dmg${'\n\n'}      b. Open and run the installation${'\n'}      c. Verify Docker successfully installed by entering the following Docker command:${'\n\n'}          $ docker version${'\n\n'}      d. The following should output:${'\n\n'}          Client: Docker Engine - Community${'\n'}           Version: 19.03.1${'\n'}          ...${'\n\n'}2. Run Docker${'\n'}      a. Press the "Command Key" + "Spacebar" and type "Docker"${'\n'}          then press the enter key to start Docker${'\n'}      b. Verify Docker is successfully running${'\n'}            i.   Launch a Terminal${'\n'}            ii.  Enter the following Docker command:${'\n\n'}                $ docker ps${'\n\n'}            iii. The following should output:${'\n\n'}               CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES${'\n\n'}`
     },
     /*
     {
