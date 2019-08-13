@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.c5b10dac.chunk.css",
-    "main.js": "/static/js/main.800b4573.chunk.js",
-    "main.js.map": "/static/js/main.800b4573.chunk.js.map",
+    "main.js": "/static/js/main.2bf426dc.chunk.js",
+    "main.js.map": "/static/js/main.2bf426dc.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.04ca30ba.chunk.js": "/static/js/2.04ca30ba.chunk.js",
     "static/js/2.04ca30ba.chunk.js.map": "/static/js/2.04ca30ba.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8d56d4b06a09bf107f32ab088ea8238a.js": "/precache-manifest.8d56d4b06a09bf107f32ab088ea8238a.js",
+    "precache-manifest.e72441a637cb2991b5417b9a81c289a9.js": "/precache-manifest.e72441a637cb2991b5417b9a81c289a9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.c5b10dac.chunk.css.map": "/static/css/main.c5b10dac.chunk.css.map",
     "static/media/index.css": "/static/media/spring-boot-logo.2e0472b9.png"
