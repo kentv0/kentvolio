@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7d0ca29f8d8f1a6df35ef9dc8ab0303",
+    "revision": "f1c6b8fc026442c1f88cc328184d2691",
     "url": "/index.html"
   },
   {
-    "revision": "88a1a5d8c60872571237",
-    "url": "/static/css/main.9cf2de2c.chunk.css"
+    "revision": "b1560eebe883a8141489",
+    "url": "/static/css/main.c5b10dac.chunk.css"
   },
   {
-    "revision": "c30fd17dd3176a335b47",
-    "url": "/static/js/2.f8367aa4.chunk.js"
+    "revision": "01e19cdf3fc72ae0d803",
+    "url": "/static/js/2.04ca30ba.chunk.js"
   },
   {
-    "revision": "88a1a5d8c60872571237",
-    "url": "/static/js/main.3d54fc69.chunk.js"
+    "revision": "b1560eebe883a8141489",
+    "url": "/static/js/main.800b4573.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -42,6 +42,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4215c87e3d885f8a3efd8e239b850784",
     "url": "/static/media/cs-course-02-img-02.4215c87e.png"
+  },
+  {
+    "revision": "103e405dcaabf70430a63e6d04a3faa3",
+    "url": "/static/media/docker-logo.103e405d.png"
+  },
+  {
+    "revision": "67979a22e775b239a019697aefd12859",
+    "url": "/static/media/gradle-logo.67979a22.png"
   },
   {
     "revision": "ea6f7e007f72734c2aa2cbd9f626896e",
@@ -76,7 +84,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/intern-01-img-03.7c7a377f.png"
   },
   {
+    "revision": "ae104114ed34e617359367996cf3b384",
+    "url": "/static/media/nexus-logo.ae104114.png"
+  },
+  {
     "revision": "3c5f6d4addcd1d694795cb3b8e6cba80",
     "url": "/static/media/project-01-img-01.3c5f6d4a.png"
+  },
+  {
+    "revision": "2e0472b9e174f0c80cc019d26a53a86e",
+    "url": "/static/media/spring-boot-logo.2e0472b9.png"
   }
 ]);
