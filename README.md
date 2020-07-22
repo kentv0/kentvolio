@@ -2,7 +2,7 @@ My Career Portfolio Website
 ======
 Introduction
 ------
-This repository contain the project code for my career portfolio website. For a live demonstration, visit https://kentvo.com
+This repository contains the project code for my career portfolio website. For a live demonstration, visit https://kentvo.com
 
 Disclaimer
 ------
